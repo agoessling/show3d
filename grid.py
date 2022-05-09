@@ -4,9 +4,9 @@ from panda3d.core import *
 
 
 class Grid:
-  def __init__(self, parent, spacing, extents):
+  def __init__(self, parent, spacing, extents, color=(0.5, 0.5, 0.5, 1.0)):
     self.lines = LineSegs('grid')
-    self.lines.setColor(0.529, 0.529, 0.529, 1.0)
+    self.lines.setColor(color)
     self.lines.setThickness(1.0)
 
     x = math.trunc(extents[0] / spacing) * spacing
