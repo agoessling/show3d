@@ -1,7 +1,7 @@
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 load("@rules_python//python:pip.bzl", "pip_install")
 
-def show3d_direct_deps():
+def show3d_second_level_deps():
     pip_install(
        name = "show3d_py_deps",
        requirements = "@show3d//:requirements.txt",
